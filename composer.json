@@ -1,0 +1,13 @@
+{
+  "name": "meteko/autosite",
+  "type": "typo3-cms-extension",
+  "license": ["GPL-2.0+"],
+  "require": {
+    "typo3/cms-core": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Meteko\\Autosite\\": "Classes"
+    }
+  }
+}
