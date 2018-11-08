@@ -5,6 +5,10 @@ A follow up extension using the newly introduced `sites` concept. The goal is to
 the given identifier a site has and a extension with the same name. In this way, no need for inclusion of typoscript
 as it's done automatically
 
+Installation
+============
+
+`composer require meteko/autosite`
 
 Preparations
 ============
