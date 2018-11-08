@@ -9,12 +9,21 @@ as it's done automatically
 Preparations
 ============
 
-THERE IS ABSOLUTELY NO WARRANTY associated with this script! It is completely on your OWN RISK that you run it.
 
- * Create a extension with the extension key that you expect to give your site as identifier
- * Create typoscript setup in `<extension-key>/Configuration/TypoScript/setup.typoscript`
- * Create typoscript constants in `<extension-key>/Configuration/TypoScript/constants.typoscript`
- * Create a new `site` with the same `identifier` as your extension key
+Frontend rendering
+------------------
+
+* Create a extension with the extension key that you expect to give your site as identifier
+* Create typoscript setup in `<extension-key>/Configuration/TypoScript/setup.typoscript`
+* Create typoscript constants in `<extension-key>/Configuration/TypoScript/constants.typoscript`
+* Create a new `site` with the same `identifier` as your extension key
+
+
+Backend Page TSconfig
+------------------
+
+* If you haven't created a extension, follow the steps in the *Frontend rendering* section above
+* Create a tsconfig file name `<extension-key>/Configuration/PageTS/main.tsconfig`
 
 
 How it works
