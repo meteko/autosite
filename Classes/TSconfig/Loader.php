@@ -16,6 +16,7 @@ use TYPO3\CMS\Core\Exception\SiteNotFoundException;
 use TYPO3\CMS\Core\Package\Exception\UnknownPackageException;
 use TYPO3\CMS\Core\Package\Package;
 use TYPO3\CMS\Core\Package\PackageManager;
+use TYPO3\CMS\Core\Site\Entity\Site;
 use TYPO3\CMS\Core\Site\SiteFinder;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 /**
@@ -41,6 +42,11 @@ class Loader
 		foreach ($rootLine as $level => $pageRecord) {
 			try {
 				$site = $siteFinder->getSiteByPageId($pageRecord['uid']);
+
+				if (!($site instanceof Site)) {
+					return [$TSdataArray, $id, $rootLine, $returnPartArray];
+				}
+
 				/** @var PackageManager $packageManager */
 				$packageManager = GeneralUtility::makeInstance(PackageManager::class);
 				/** @var Package $package */

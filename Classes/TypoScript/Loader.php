@@ -39,6 +39,10 @@ class Loader
 		/** @var Site $site */
 		$site = $request->getAttribute('site');
 
+		if (!($site instanceof Site)) {
+			return;
+		}
+
 		// let's copy the rootline value, as $templateService->processTemplate() might reset it
 		$rootLine = $hookParameters['rootLine'];
 		if (!is_array($rootLine) || empty($rootLine)) {
