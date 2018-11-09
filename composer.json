@@ -1,5 +1,6 @@
 {
   "name": "meteko/autosite",
+  "description":  "Automatically load TypoScript and PageTS to a pagetree, based on your 'sites' configuration. Give your site the same identifier as a extension and configuration is automatically loaded.",
   "type": "typo3-cms-extension",
   "license": ["GPL-2.0+"],
   "require": {
