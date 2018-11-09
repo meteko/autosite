@@ -80,7 +80,7 @@ class Loader
 					'nextLevel' => 0,
 					'static_file_mode' => 1,
 					'tstamp' => filemtime($setupFile),
-					'uid' => 'sys_bolt_' . $package->getPackageKey(),
+					'uid' => 'autosite_' . $package->getPackageKey(),
 					'title' => $package->getPackageKey(),
 					// make this the root template
 					'root' => !$hasRootTemplate
