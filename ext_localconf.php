@@ -12,3 +12,6 @@ $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['Core/TypoScript/TemplateService']['ru
 	'addSiteConfiguration'
 );
 
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['Objects'][\TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController::class] = [
+	'className' => \Meteko\Autosite\Frontend\Controller\TypoScriptFrontendController::class
+];
